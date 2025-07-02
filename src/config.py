@@ -1,3 +1,5 @@
+"""Configuration settings for the project."""
+
 # Base configuration parameters for the project
 # KaggleHub dataset path
 KAGGLEHUB_DATASET_PATH = "parisrohan/credit-score-classification"
