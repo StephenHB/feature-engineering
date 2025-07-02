@@ -28,13 +28,12 @@ def knn_impute(df, n_neighbors=5, weights='uniform', columns=None):
 # df_imputed = knn_impute(df, n_neighbors=3) 
 
 def impute_data(df, method):
-    """
-    Impute missing values in a DataFrame based on the specified method.
-    
+    """Impute missing values in a DataFrame based on the specified method.
+
     Parameters:
         df (pd.DataFrame): Input DataFrame with missing values.
         method (str): Imputation method. Possible values: 'mean', 'median', 'knn'.
-    
+
     Returns:
         pd.DataFrame: DataFrame with imputed values.
     """
@@ -44,5 +43,7 @@ def impute_data(df, method):
         return df.fillna(df.median())
     if method == 'knn':
         imputer = KNNImputer()
-        return pd.DataFrame(imputer.fit_transform(df), columns=df.columns)
+        return pd.DataFrame(
+            imputer.fit_transform(df), columns=df.columns
+        )
     return df 
