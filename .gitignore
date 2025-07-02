@@ -209,3 +209,6 @@ __marimo__/
 # Ignore Python virtual environment and library folders
 lib/
 feature-engineering/
+
+.DS_Store
+src/.DS_Store
