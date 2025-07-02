@@ -1,6 +1,7 @@
+"""Load credit data utilities."""
+import os
 import kagglehub
 import pandas as pd
-import os
 
 def download_credit_data():
     """

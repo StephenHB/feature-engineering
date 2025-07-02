@@ -1,0 +1,11 @@
+[MASTER]
+ignore=venv,lib,site-packages
+
+[MESSAGES CONTROL]
+disable=
+
+[REPORTS]
+output-format=colorized
+
+[FORMAT]
+max-line-length=100 

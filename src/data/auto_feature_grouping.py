@@ -1,8 +1,6 @@
-"""
-Module for automatic feature grouping utilities.
-"""
-import pandas as pd
+"""Automatic feature grouping utilities."""
 from typing import Dict, Any
+import pandas as pd
 import numpy as np
 
 
